@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#Calculadora {
+    width: 400px;
+    padding: .5em;
+    background-color: #c4c4c4;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#Calculadora h3 {
+    font-size: .8em;
+    font-weight: 400;
+    color: black;
+}
+
+#operacoes {
+    text-align: right;
+}
+
+#previas-operacao {
+    color: grey;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#operacao-atual {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 400px;
+    box-shadow: 5px 5px 5px;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+
+}
+
+#buttons-container .number {
+    background-color: #f3f3f3;
+
+}
+
+#buttons-container button:hover {
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#buttons-container #igual-bnt {
+    grid-column: span 2;
+    background-color: limegreen;
+}
+
+#buttons-container #igual-bnt:hover {
+    background-color: green;
+}
